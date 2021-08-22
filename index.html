@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>U.S. COVID-19 Dashboard</title>
+
+    <script type="text/javascript"
+	    src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+    <script type="text/javascript">
+        function init() {
+            var containerDiv = document.getElementById("visualizationContainer")
+            const url = "https://public.tableau.com/views/U_S_COVID-19Dashboard_16229347721420/Dashboard";
+            var options = { hideTabs: true };
+            var viz = new tableau.Viz(containerDiv, url, options);
+        }
+    </script>
+</head>
+
+<body onload="init();">
+  <div id="visualizationContainer" style="height: 1000px; width: 1400px;"></div>
+</body>
+
+</html>
